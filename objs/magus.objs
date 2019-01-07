@@ -1,0 +1,11 @@
+"Magus":15:9:6:70:150:3
+"Mute":"Mute the target, can't use any spell for 2T.":10MP:4T:2T
+"Poison":"The target loose 5% of his max HP for 2T.":25MP:2T:2T:-5%
+"Burn":"The target loose 2% of his max HP for 2T.":25MP:6T:2T:-2%:10DCR
+"Sleep":"The target can't attack for 3T or until he get hit.":5MP:6T:2T
+"Paralysis":"Paralyse the target for 1T.":35MP:3T:1T
+"Froze":"Prevents the target to use any melee attack for 2T.":15MP:4T:2T
+"Meteor Strike":"Alot of meteors strike the ground.":65MP:2T::::0.32MOD:25%
+"Eruption":"Lava coming from the ground.":35MP:1T::::0.12::10%
+"Absolute 0":"Ice tempest on the area.":40MP:1T::::0.15:::10%
+"Thunder":"Electric attack on one target.":90MP:2T::::0.40::10%

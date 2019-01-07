@@ -12,7 +12,6 @@ void update_player_pos_y(p_game *g, int y)
 	int i = sfTime_asMilliseconds(sfClock_getElapsedTime(g->player_clock));
 	int test = g->i_player.pos.y;
 
-
 	test = test % g->rect_map.height;
 	if (i > 20) {
 		if (test != 0) {
@@ -28,7 +27,6 @@ void update_player_pos_x(p_game *g, int x)
 {
 	int i = sfTime_asMilliseconds(sfClock_getElapsedTime(g->player_clock));
 	int test = g->i_player.pos.x;
-
 
 	test = test % g->rect_map.width;
 	if (i > 20) {
@@ -57,7 +55,7 @@ void update_player_pos(p_game *g)
 			update_player_pos_x(g, 1);
 			break;
 	}
-        sfSprite_setPosition(g->i_player.sprite, g->i_player.pos);
+	sfSprite_setPosition(g->i_player.sprite, g->i_player.pos);
 }
 
 void update_player_start_moving(p_game *g)
@@ -78,13 +76,28 @@ void update_player_start_moving(p_game *g)
 			g->i_player.pos.x += g->rect_map.width / 8;
 			break;
 	}
+	sfSprite_setPosition(g->i_player.sprite, g->i_player.pos);
 }
 
 void update_player(p_game *g)
 {
-	if (g->player_move == 1) {
-		if (player_can_walk(g))
+	if (g->player_move == 1 && g->boss_zone == 0) {
+		if (player_can_walk(g, g->map))
 			update_player_start_moving(g);
-	} else if (g->player_move == 2)
+	} else if (g->player_move == 1 && g->zone > 3) {
+		if (player_can_walk(g, g->f_boss_map))
+			update_player_start_moving(g);
+	} else if (g->player_move == 1) {
+		if (player_can_walk(g, g->boss_map))
+			update_player_start_moving(g);
+	} else if (g->player_move == 2) {
 		update_player_pos(g);
+		if (g->player_move == 0 && g->boss_zone == 0)
+			check_player_case(g, g->map);
+		else if (g->player_move == 0 && g->zone > 3)
+			check_player_case(g, g->f_boss_map);
+		else if (g->player_move == 0)
+			check_player_case(g, g->boss_map);
+	}
+	update_player_animation(g);
 }

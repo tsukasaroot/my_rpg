@@ -10,12 +10,14 @@
 void draw_title_screen(p_game *g)
 {
 	sfVector2f pos;
+	int ct = 0;
 
 	if (g->second_tx >= 0.05) {
 		g->count_tx++;
-		if (g->count_tx == 80)
+		if (g->count_tx == 40)
 			g->count_tx = 0;
-		sfSprite_setTexture(g->sprite_tx, g->title_scr[g->count_tx], sfTrue);
+		ct = g->count_tx;
+		sfSprite_setTexture(g->sprite_tx, g->title_scr[ct], sfTrue);
 		sfClock_restart(g->clock_tx);
 	}
 	pos.x = 800;

@@ -12,5 +12,5 @@ int set_img_rect_size(p_img *img, int width, int height)
 	img->rect.height = height;
 	img->rect.width = width;
 	sfSprite_setTextureRect(img->sprite, img->rect);
-        return (0);
+	return (0);
 }

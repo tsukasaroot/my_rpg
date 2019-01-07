@@ -7,6 +7,17 @@
 
 #include "my_rpg.h"
 
+int is_nbr(char *str)
+{
+	int i = 0;
+
+	while (str[i] >= 48 && str[i] <= 57)
+		i++;
+	if (str[i])
+		return (0);
+	return (1);
+}
+
 int get_nbr(char *str)
 {
 	int i = 0;

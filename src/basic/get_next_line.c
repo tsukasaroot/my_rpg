@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2018
-** get_nextline
+** my_rpg
 ** File description:
-** c file
+** get next line
 */
 
 #include "my_rpg.h"
@@ -30,7 +30,6 @@ char *get_nextline(int fd)
 	char *buff;
 
 	if ((buff = malloc(sizeof(char))) == NULL) {
-		my_put_str("Error");
 		return (NULL);
 	}
 	buff[0] = '\0';

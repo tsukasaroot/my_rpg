@@ -14,5 +14,5 @@ void set_img_relative_pos(p_game *g, p_img *img)
 
 	img->relative_pos.x = img->pos.x + center.x - size.x / 2;
 	img->relative_pos.y = img->pos.y + center.y - size.y / 2;
-        sfSprite_setPosition(img->sprite, img->relative_pos);
+	sfSprite_setPosition(img->sprite, img->relative_pos);
 }

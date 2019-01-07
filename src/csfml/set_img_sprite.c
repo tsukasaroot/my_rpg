@@ -11,10 +11,10 @@ int set_img_sprite(p_img *img, const char *path)
 {
 	sfFloatRect size;
 
-        img->texture = sfTexture_createFromFile(path, NULL);
+	img->texture = sfTexture_createFromFile(path, NULL);
 	if (!img->texture)
 		return (84);
-        img->sprite = sfSprite_create();
+	img->sprite = sfSprite_create();
 	sfSprite_setTexture(img->sprite, img->texture, sfTrue);
 	size = sfSprite_getLocalBounds(img->sprite);
 	img->pos.x = 0;
@@ -23,5 +23,5 @@ int set_img_sprite(p_img *img, const char *path)
 	img->rect.left = 0;
 	img->rect.width = size.width;
 	img->rect.height = size.height;
-        return (0);
+	return (0);
 }

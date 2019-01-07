@@ -1,7 +1,9 @@
+# Dialogues d'intro
+
 x,y
-"Lyon, mai 2018."
+"Lyon, May 2018."
 x,y
-"Appartements de Kaï, étudiant."
+"/h appartment, student."
 /play dring
 
 "*Ding* *Dong*"
@@ -9,87 +11,101 @@ x,y
 
 /show main
 
-</h> "Qui ça peut-être à cette heure-ci... ?"
+</h> "Who this can be at this time...?"
 "..."
-</h> "I-Inaba !? Po-pourquoi..."
-
+</h> "I-Inaba?! Wh-why..."
 /show inaba
-<Inaba> "Coucou~ ! Ben alors, j'attendais que tu m'appelles mon choux~ !"
-</h> "Haa, désolé... J'étais occupé, mais tu n'avais pas besoin de te déplacer jusqu'ici... ça ira pour rentrer ?"
-<Inaba> "Quoi ! Tu comptes demander à ta petite-amie de rentrer chez elle aussi tard ! Tu t'inquiètes même pas un peu pour moi~ ?"
-</h> "Si bien sûr ! Mais... tu comptes vraiment dormir ici ?"
-<Inaba> "Et pourquoi pas ! On va bien s'amuser~, pyjama party !"
-</h> "Je suis pas vraiment habitué à ça, haha..."
-<Inaba> "En tout cas, laisse moi entrer maintenant, il fait froid et je veux voir ta maison~."
-</h> "Ah oui, désolé, entre, fais comme chez toi."
-<Inaba> "Ouah, c'est incroyable, je pensais qu'il y aurait plus de bordel, comme dans la chambre de mon frère, héhé."
-</h> "Bah, je fais en sorte de pouvoir m'y retrouver dans mes cahiers."
-</h> "Qu-que..."
-"Inaba était couchée sur le sol, fouillant sous le lit."
-"Elle se releva, quelques minutes après, l'air déçue."
-</h> "Toujours en train de faire des choses bizarres..."
-</h> "Je vais dans la cuisine pour préparer quelque chose, regarde la télé en attendant si tu veux."
-<Inaba> "Okaay !"
+
+<Inaba> "Hey~! Darling, i was waiting for you to call me~!"
+</h> "Haa, sorry... I was busy, but you didn't had to come to here..."
+</h> "It will be fine for you to go back home?"
+<Inaba> "What! You planned to let your girlfriend going home this late?!"
+<Inaba> "You not even worry for me~?"
+</h> "I'm worry, sure, but... do you really want to sleep here?"
+<Inaba> "And why not! We'll have fun~, let's do a pyjama party!"
+</h> "I'm really not used to this haha..."
+<Inaba> "Anyway, let me enter now, I'm cold and i want to see your home~."
+</h> "Ah yes, sorry. Come in, make yourself at home."
+<Inaba> "Ouah, I thought it would be a total mess, like my brother's room, hehe."
+</h> "Well I'm trying to stay orderly."
+</h> "Wh-what..."
+"Inaba was crouch on the ground, looking for something under my bed."
+"She stood up some minutes later, looking disappointed."
+</h> "You are still doing weird things..."
+</h> "I go cook something, watch the TV in the meanwhile if you want."
+<Inaba> "Okaay!"
 /hide inaba
 
-"Quelques minutes plus tard."
-<Inaba> "Ooh ! C'est quoi ça ! /h viens voir, vite !"
-</h> "Rho, J'arrive, deux minutes."
+"Some minutes later."
+<Inaba> "Ooh! What is that?! /h come see that, hurry!"
+</h> "Rho, I'm coming, two minutes please."
 "..."
-</h> "Mh ? Inaba ?"
+</h> "Mh? Inaba?"
 "..."
-"Je suis retourné dans la pièce principale."
+"I go back to the main room."
 /play vortex
 
 "..."
-</h> "Qu-... c'est quoi ça. Inaba... Inaba !"
-</h> "Hé, c'est pas drôle, c'est quoi ce truc, ça va brûler l'appartement. Eteint ça !"
+</h> "Wha-... what's that. Inaba... Inaba!"
+</h> "Hey, it's not funny, what is that, it will burn the appartment. Stop this!"
 /play_vortex
+
 "..."
-</h> "Inaba !!"
-"J'ai hésité pendant un moment, puis je me suis approché de cette boule rouge"
+</h> "Inaba!!"
+"I hesitated for a while, then I approach this red vortex."
 "... !"
-"J'ai sauté dedans."
+"It grow up instantly."
 /hide bg_1
 
 /show bg_2
 
 /play forest
 
-<Voix 1> "Qu'est-ce qu'il fait étendue là... ? Je me demande s'il est vivant déjà."
-<Voix 2> "On a pas le temps de s'occuper d'un clochard Oz, dépêchons-nous."
-<Oz> "Oh allez, on peut au moins l'amener à l'auberge non ?"
-<Voix 3> "Je suppose oui..."
+<Voice 1> "What he his doing here like that...? I wonder if he is alive."
+<Voice 2> "We do not have time for this Oz, hurry up."
+<Oz> "Oh come on, we still can bring him to an inn, no?"
+<Voice 3> "I guess..."
 /stop forest
+
+/hide bg_2
 
 /show bg_3
 
 /play auberge
 
-<Oz> "Ah enfin réveillé !"
-</h> "Uhh, ma tête."
-<Voix 2> "Bon il va bien on peut y aller maintenant ?"
-<Voix 3> "Attends, ces vêtement sont étranges, j'ai des questions à lui poser. Il pourrait nous être utile."
-<Oz> "Oui ! Alors tu t'appelles comment ? Moi c'est oz prête itinérant, enchanté !"
-</h> "... Bonjour, je m'appelle /h. Je suis où ? J'étais dans ma chambre il y a quelques instants..."
-<Voix 2> "Jassie, chevalière de l'alliance magique. Tu es à l'auberge du chaton flamboyant, en Zestiland."
-<Voix 3> "Je suis Enore mage du seigneur de pays, j'ai mis des vêtements propre à côté de toi."
-</h> "Ah merci..."
-</h> "I-Inaba ! Où est-elle ?"
-<Oz> "Qui ? Tu étais tout seul dans la forêt, non ?"
-<Jessie> "Je confirme, par contre on sait qu'une étrangère à été enlevée par Hydrath, dans la zone désertique."
-</h> "Quoi !? Enlevée ! Oh non... Je... Je dois appeler la police ! Mon téléphone, vite, vite..."
+<Oz> "Ah, you finally awake!"
+</h> "Uhh, my head."
+<Voice 2> "Nice, he looks fine. Can we go now?"
+<Voice 3> "Wait. His clothes looks strange. I have some question for him."
+<Voice 3> "He could be useful."
+<Oz> "Yes! So, what's your name? I'm Oz, a traveling priest."
+</h> "...Hello, I'm /h. Where am I? I was in my appartment just earlier..."
+<Voice 2> "Jassie, magical alliance's magus. You are in the fire kitten inn, in Zestiland."
+<Voice 3> "Enore, knight of the lord of this land"
+<Voice 3> "I've put some clean clothes close to you."
+</h> "Ah thanks..."
+"..."
+</h> "I-Inaba! Where is she!?"
+<Oz> "Who? You were alone in this forest, right?"
+<Jessie> "Confirmed, but we know that a stranger girl was kidnapped by hydrath."
+</h> "Where?!!"
+<Jessie> "In the desert area."
+</h> "What?! Oh no... I... I have to call the police! My phone, quick, quick..."
 /play bip
 
-*Bip* Aucun réseaux !
-</h> "Qu-quoi !"
-<Enore> "Mmh ? Cette chose... Tu vas devoir répondre à beaucoup de questions toi. Mais tout d'abord, cette fille enlevée, tu la connais ? Elle vient du même endroit que toi ?"
-</h> "Sû-sûrement oui... Vous pouvez la libérer ? Je vous en suppplie sauvez-là."
-<Enore> "Si vous me parlez de vous et de votre nation, c'est vite vu pour moi. De toute façon on était en chemin pour l'éliminer."
-<Oz> "Oui t'en fais pas on va la sauver ! D'ailleurs viens toi aussi, on a des armes en plus ça va être amusant !"
-<Jessie> "J'ai toujours du mal à comprendre quel genre de prêtre tu es, en tout cas, en tant que chevalière je dois protéger les innocents."
-<Oz> "Allez te gêne pas, prend cette armure et cette épée, on se met en route tout de suite !"
-</h> "Ah-ah ok, je me prépare... ?"
+"*Bip* No signal!"
+</h> "Wha-what!"
+<Enora> "Mmh? This thing... You must answer alot of my questions."
+<Enora> "But first, do you know this kidnapped girl? She's from the same place than you?"
+</h> "Cer-certainly yes... can you save her? Please, save her!"
+<Enore> "If you speak to me of you and your nation, count on me."
+<Enore> "We were on the road to kill this monster anyway."
+<Oz> "Yeah, be sure we will save her! By the way, you come too"
+<Oz> "We have weapons we can give to you and, it will be more fun!"
+<Jessie> "I still have difficulties to understand what kind of priest you are."
+<Jessie> "Anyway, as magus, I have to protect innocents."
+<Oz> "Come on, take this armor and this sword, we go now!"
+</h> "Ah-ah, well I prepare myself...?"
 /hide bg_3
 
 /stop auberge

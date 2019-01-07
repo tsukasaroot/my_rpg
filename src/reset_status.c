@@ -11,6 +11,7 @@ void reset_status(p_game *g)
 {
 	g->status_start_menu = 0;
 	g->status_game_menu = 0;
+	g->option_select = 1;
 	g->bt_load.status = 0;
 	g->bt_option.status = 0;
 	g->bt_quit.status = 0;

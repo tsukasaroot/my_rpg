@@ -13,15 +13,11 @@ int main(int argc, char **argv)
 	int x = 0;
 	int y = 0;
 
-	if (argc != 2) {
-		bad_argument(argc);
-		return (84);
-	}
-	if (my_strcmp(argv[1], "-h")) {
+	if (argc > 1 && my_strcmp(argv[1], "-h")) {
 		flag_h();
 		return (0);
 	} else {
-		map = get_map(argv[1], &x, &y);
+		map = get_map("map/map", &x, &y);
 		if (map == NULL)
 			return (0);
 		game_loop(map, x, y);

@@ -24,6 +24,8 @@ int my_strlen(char *s)
 {
 	int i = 0;
 
+	if (s == NULL)
+		return (0);
 	while (s[i] != '\0')
 		i++;
 	return (i);
@@ -34,7 +36,7 @@ char *my_strcpy(char *str)
 	int i = my_strlen(str) + 1;
 	char *new = NULL;
 
-	if (i <= 1)
+	if (i <= 0)
 		return (NULL);
 	new = malloc(sizeof(char) * (i));
 	i = 0;

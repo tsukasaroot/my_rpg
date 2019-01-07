@@ -14,6 +14,18 @@ void update_menu(p_game *g)
 	update_sub_menu(g);
 }
 
+void update_sub_menu_part2(p_game *g)
+{
+	switch (g->status_game_menu) {
+		case 6 :
+			update_menu_setup(g);
+			break;
+		case 7 :
+			update_menu_save(g);
+			break;
+	}
+}
+
 void update_sub_menu(p_game *g)
 {
 	switch (g->status_game_menu) {
@@ -32,12 +44,8 @@ void update_sub_menu(p_game *g)
 		case 5 :
 			update_menu_story(g);
 			break;
-		case 6 :
-			update_menu_setup(g);
-			break;
-		case 7 :
-			update_menu_save(g);
+		default:
+			update_sub_menu_part2(g);
 			break;
 	}
-
 }

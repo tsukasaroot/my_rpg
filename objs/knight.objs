@@ -1,0 +1,9 @@
+"Knight":5:14:10:80:100:5
+"Rage Knock":"The next attack of the target is for you, CCx2.":35MP:3T::::::::::0:0.50MOD:50%
+"Angels Help":"Give back 10% HP.":100MP:2T::20%::::::::::
+"Shield Punch":"KO the target, she can't do anything for the next tour.":10MP:3T:::::::::::0.35MOD:
+"Angel Thrust":"Thrust hit grace by divinities, CCx2":70MP:1T:::::::::::0.9MOD:50%
+"Noble Shout":"40% of chance to be attacked on the next T. 40% more CC for the party.":70MP::::::::::::0:40%
+"Basic Hit":"Sword hit, totally basic.":0MP:0T::::::::::::
+"Mocking Spin":"Impulsion hit on all enemies. 15% more chance to be attack next T.":10MP:0T:::::::::::0:
+"Block":"Block 80% of next damages.":40MP:0T::::::::::::

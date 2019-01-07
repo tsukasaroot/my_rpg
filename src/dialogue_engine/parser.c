@@ -14,9 +14,11 @@ int file_size(char *path)
 	int i = 0;
 
 	fd = open(path, O_RDONLY);
-	if (fd != 0) {
+	if (fd != -1) {
+		i = i + 2;
 		while (read(fd, &c, 1) > 0)
-			i++;
+			if (c == '\n')
+				i++;
 		close(fd);
 	} else {
 		my_put_str("File open error\n");
@@ -39,11 +41,13 @@ char **parse_script(char **dialogue, int file_len)
 		}
 		i++;
 	}
+	dialogue_cpy[j] = NULL;
 	free_tab(dialogue);
 	return (dialogue_cpy);
 }
 
-char *str_replace(char *s, int i, char *name) {
+char *str_replace(char *s, int i, char *name)
+{
 	char *s_cpy = 0;
 	int j = 0;
 	int k = 0;

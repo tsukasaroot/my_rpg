@@ -1,0 +1,12 @@
+"Priest":10:9:20:70:150:5
+"Healing Touch":"Heal the target, 20%CC.":10MP:1T::::0.5MOD::45%
+"Blessing of Gods":"Best healing skill, 45%CC.":35MP:3T::::1.25::45%
+"Regeneration":"Heal 3% of max HP of the pty for 3T(1% per T).":50MP:5T:3T:3%::::
+"Cleanse":"Cleanse the party."::::::::
+"Divine Power":"10% power up for the party for 2T.":40MP:5T:2T:10%::::
+"Shield":"10% defense up for the part for 2T.":40MP:5T:2T:::::
+"Photon":"Inflict light damages on a target.":30MP:1T:::::0.12:
+"Basic Resurection":"Resurect an ally with 10% HP and MP.":10MP:1T::10%::::
+"Divine Resurection":"Resurect an ally with 100%  HP and MP.":100MP:7T::100%::::
+"Magnetic Field":"Reduce damage received for the user of 75%.":15MP:4T::75%::::
+"Mana Managment":"Transfer 15% of mana to another character.":0MP:3T::::::

@@ -1,0 +1,10 @@
+"Slayer":9:11:17:70:100:7
+"Lethal Strike":"Mortal charged attack, 90%CC.":55MP:0.35MOD:3T:::::::::::90%
+"Furious Hit":"Fast hit, under 40% HP reset Lethal Strike. 75%CC.":35MP:2T::::::::::1:0.26MOD:75%
+"Storm of Sword":"Rain of sword hits, 60%CC.":40MP:1T:::::::::::0.45:60%
+"Powerful Hit":70MP:5T:2T::::::::::::75%
+"Let's go Friends!":"Basic hit applying 20% atk to partymembers.":25MP:2T::::::::::::0.22T:80%
+"Critical Hit":"Hard hit with big crit rate.":35MP:3T::::::::::::O.31MOD:80%
+"Basic Hit":"Ordinary hit.":::::::::::::::
+"Sword Wave":"Turn on yourself to inflict dmg to everyone":50MP:3T::::::::::::0.14:50%
+"Reverse Parade":"Reflect 15% damages to the enemy, absorb 30%":50MP:1T:::::::::::::

@@ -12,5 +12,5 @@ int set_img_rect_pos(p_img *img, int top, int left)
 	img->rect.top = top;
 	img->rect.left = left;
 	sfSprite_setTextureRect(img->sprite, img->rect);
-        return (0);
+	return (0);
 }
